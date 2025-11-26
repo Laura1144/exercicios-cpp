@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Quantas pessoas serao digitadas? ";
+    cin >> N;
+
+    string nome[10];
+    int idade[10];
+    double altura[10];
+
+    double somaAlt = 0;
+    int menores = 0;
+
+    for (int i = 0; i < N; i++) {
+        cout << "Dados da " << i+1 << "a pessoa:\n";
+        cout << "Nome: ";
+        cin >> nome[i];
+        cout << "Idade: ";
+        cin >> idade[i];
+        cout << "Altura: ";
+        cin >> altura[i];
+
+        somaAlt += altura[i];
+        if (idade[i] < 16) menores++;
+    }
+
+    cout << fixed << setprecision(2);
+    cout << "\nAltura media: " << somaAlt / N << endl;
+
+    double porcentagem = (double)menores / N * 100.0;
+
+    cout << "Pessoas com menos de 16 anos: " 
+         << fixed << setprecision(1) << porcentagem << "%\n";
+
+    for (int i = 0; i < N; i++)
+        if (idade[i] < 16)
+            cout << nome[i] << endl;
+}
