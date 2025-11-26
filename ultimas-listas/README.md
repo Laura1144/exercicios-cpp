@@ -2,10 +2,10 @@ APS2-Algoritimos
 
 Laura de Paula Rosa
 
-📋 Breve Descrição das Atividades
+Breve Descrição das Atividades
 Este repositório contém uma coleção de programas desenvolvidos em C++ durante o aprendizado de algoritmos e programação estruturada. Os exercícios abordam conceitos fundamentais como loops (for), vetores, matrizes, modularização e structs, progressivamente aumentando em complexidade.
 
-📁 Estrutura do Repositório
+Estrutura do Repositório
 O repositório está organizado em pastas temáticas, cada uma abordando um conceito específico:
 
 04-repeticao-for/
@@ -42,7 +42,8 @@ alturas_struct.cpp - Armazenar dados de alturas de pessoas
 funcionarios_struct.cpp - Dados de funcionários
 idades_struct.cpp - Armazenar idades e informações
 notas_struct.cpp - Registro de notas e alunos
-🚀 Instruções Básicas de Execução
+
+Instruções Básicas de Execução
 Pré-requisitos
 Compilador C++ instalado (g++, clang ou similar)
 Terminal ou prompt de comando
@@ -72,4 +73,5 @@ Você pode compilar e executar em um único comando:
 g++ -o programa arquivo.cpp && ./programa
 Dicas
 Cada pasta contém exercícios independentes
+
 Alguns programas podem solicitar entrada do usuário durante a execução
